@@ -2,6 +2,22 @@
 .banner {
   background-image: url(https://images.unsplash.com/photo-1594909122845-11baa439b7bf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
   background-size: cover;
-  height: 80vh;
+  height: 90vh;
+  position: relative;
+h1{
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+}
+
+.btn-add {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  background-color: #D4D1D4;
+  border-radius: 10px;
+  &:hover {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 3px 5px 0px, rgba(60, 64, 67, 0.15) 0px 3px 5px 3px;
+
+  }
 }
 
