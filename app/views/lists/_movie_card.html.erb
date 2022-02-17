@@ -1,0 +1,17 @@
+<div class="card-movie">
+  <div class="card-product">
+    <%= image_tag movie.poster_url, alt: movie.title, class: "movie-img rounded-top" %>
+    <div class="card-product-infos">
+      <h2><%= movie.title %></h2>
+      <p><strong>• <%= movie.rating %> <i class="fas fa-star star-yellow"></i></strong> </p>
+      <p><%= movie.overview %> </p>
+    </div>
+  </div>
+    <div class="card-bookmark">
+      <p><%= bookmark.comment %></p>
+      <%= link_to bookmark_path(bookmark), method: :delete, class: "btn btn-cancel", data: { confirm: "Are you sure you want to remove this movie from the list?" } do %>
+        <i class="fa fa-trash-o color" style="color: red; font-size: 2em;"></i>
+        <% end %>
+
+    </div>
+  </div>
