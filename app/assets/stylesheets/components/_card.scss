@@ -1,6 +1,6 @@
-.row {
-  flex-wrap: nowrap;
-  margin: 0;
+.all-lists {
+  display: flex;
+  flex-wrap: wrap;
 }
 .card-category {
   background-size: cover;
