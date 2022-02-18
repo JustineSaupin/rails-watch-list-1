@@ -26,6 +26,7 @@
   <div class="btn-movie">
     <%= "You haven't saved any movies yet!" if @list.movies.empty? %>
     <%= link_to "Add a movie to this list", new_list_bookmark_path(@list), class: "btn btn-show" %>
+    <%= link_to "Delete this list", list_path(@list), method: :delete, class: "btn btn-show" %>
     <%= link_to "Back to the lists", lists_path, class: "btn btn-show" %>
   </div>
 </div>
